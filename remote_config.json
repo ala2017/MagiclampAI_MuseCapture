@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "notification": {
+    "show": true,
+    "message": "🚀 新增 AI 一键直达，点击图标试试！",
+    "link": "#"
+  },
+  "ai_sites": [
+    {
+      "id": "liblib",
+      "name": "LiblibAI",
+      "url": "https://www.liblib.art",
+      "icon": "https://liblib.art/favicon.ico",
+      "desc": "中国领先的AI创作平台"
+    },
+    {
+      "id": "openart",
+      "name": "OpenArt",
+      "url": "https://openart.ai",
+      "icon": "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/icons-static/assets/icons/openart.svg",
+      "desc": "Discover AI Art & Prompts"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com/app/",
+      "icon": "https://cdn.jsdelivr.net/gh/lobehub/lobe-icons/packages/icons-static/assets/icons/midjourney.svg",
+      "desc": "最强AI绘画工具"
+    },
+    {
+      "id": "jimeng",
+      "name": "即梦AI",
+      "url": "https://jimeng.jianying.com/",
+      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/jimeng-color.png",
+      "desc": "字节跳动旗下AI创作平台"
+    }
+  ]
+}
