@@ -1,0 +1,2 @@
+# MagiclampAI_MuseCapture
+全网首个快速收集AI图片和提示词插件工具；快捷右键采集网页AI图片与提示词，支持图库本地存档管理和Notion同步。
