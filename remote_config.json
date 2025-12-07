@@ -10,7 +10,7 @@
       "id": "keling",
       "name": "可灵AI",
       "url": "https://app.klingai.com/cn/",
-      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/kling-color.svg",
+      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/kling-color.png",
       "desc": "中国领先的AI创作平台"
     },
     {
@@ -24,14 +24,14 @@
       "id": "midjourney",
       "name": "Midjourney",
       "url": "https://www.midjourney.com/app/",
-      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/midjourney.svg",
+      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/midjourney.png",
       "desc": "最强AI绘画工具"
     },
     {
       "id": "jimeng",
       "name": "即梦AI",
       "url": "https://jimeng.jianying.com/",
-      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/jimeng-color.svg",
+      "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/jimeng-color.png",
       "desc": "字节跳动旗下AI创作平台"
     }
   ]
