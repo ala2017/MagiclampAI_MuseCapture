@@ -16,14 +16,14 @@
     {
       "id": "openart",
       "name": "OpenArt",
-      "url": "openart.ai/home/?via=tao",
+      "url": "https://openart.ai/home/?via=tao",
       "icon": "https://logo-teka.com/wp-content/uploads/2025/08/openart-ai-sign-logo.svg",
       "desc": "Discover AI Art & Prompts"
     },
     {
       "id": "midjourney",
       "name": "Midjourney",
-      "url": "https://www.midjourney.com/app/",
+      "url": "https://www.midjourney.com",
       "icon": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/midjourney.png",
       "desc": "最强AI绘画工具"
     },
