@@ -1,53 +1,50 @@
-# Privacy Policy for MagiclampAI·MuseCapture
-**Last Updated:** December 7, 2025
+# MuseCapture 隐私与权限声明 | Privacy & Permissions Statement
+更新日期 / Last Updated: 2025-12-11
 
-MagiclampAI·MuseCapture ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our Chrome extension handles your data.
+## 隐私声明 / Privacy
+- 我们不收集、不存储、不分享任何个人数据；所有数据仅在您的设备本地处理与保存。
+- We do not collect, store, or share any personal data; all processing and storage happen locally on your device.
 
-## 1. Data Collection and Usage
-**We do NOT collect, store, or transmit your personal data to our servers.**
-MuseCapture is a **local-first** application. All data processed by the extension resides strictly on your local device or within your own Notion workspace (if configured).
+## 数据收集与存储 / Data Collection & Storage
+- 本地存储：采集的图片、来源信息、提示词、个人设置保存在浏览器 LocalStorage/IndexedDB。
+- Local Storage: Captured images, source info, prompts, and preferences are stored in the browser’s LocalStorage/IndexedDB.
+- 文件系统访问（需用户授权）：您选择本地目录并授权后，插件会将图片文件、Markdown 文档与 `metadata.json` 写入该目录；仅用于个人资料管理，不上传至任何服务器。
+- File System Access (user consent required): After you select and grant access to a local folder, the extension writes image files, Markdown documents, and `metadata.json` to that folder for personal library management. No server uploads.
+- 剪贴板读取：仅在用户点击“粘贴”等明确操作时读取剪贴板中的图片或链接用于采集；不会后台监控或自动读取。
+- Clipboard Reading: Reads images or links from the clipboard only when you explicitly click “Paste” for capture; no background monitoring.
 
-### 1.1 Permissions Usage
-- **activeTab & tabs**: Used only to retrieve the image URL and page title of the current tab when you trigger a capture action. This data is used locally to generate filenames and source links.
-- **contextMenus**: Used to provide the "Capture Image" option in the right-click menu.
-- **clipboardRead**: Used to read image data from your clipboard only when you click the "Paste" button.
-- **storage & unlimitedStorage**: Used to save your local settings (language, Notion config) and the image library index on your browser.
+## 远程配置与图标资源 / Remote Config & Icons
+- 为提供站点快捷入口，侧边栏会从 GitHub Raw/CDN 拉取公开的站点列表与图标；不包含或发送任何个人数据。
+- To power site quick-launch, the side panel fetches public site lists and icons from GitHub Raw/CDN. No personal data is included or sent.
 
-## 2. Third-Party Services
-### 2.1 Notion (Optional)
-If you choose to enable Notion integration, the extension communicates directly with the Notion API using the credentials you provide. Your Notion API token is stored locally in your browser (Chrome Storage) and is never sent to us.
+## 第三方服务（可选） / Third-Party Services (Optional)
+- Notion 同步：仅在您启用后使用，数据由浏览器直接发送至 Notion 官方 API；您的 Integration Token 仅保存在本地，不会被上传或中转。
+- Notion Sync: Used only when enabled. Data is sent directly from the browser to Notion’s official API. Your Integration Token is stored locally and never uploaded or proxied.
 
-## 3. Data Security
-Since we do not host any servers for this extension, your data security relies on your local device security and Google Chrome's sandbox environment.
+## 权限与用途 / Permissions & Usage
+- `activeTab` / `tabs`：读取当前活动标签页标题与 URL，用于生成文件名与来源链接；仅本地使用。
+- `activeTab` / `tabs`: Read the active tab’s title and URL to generate filenames and source links; used locally only.
+- `storage`：保存语言、Notion 配置、库索引与偏好至浏览器本地。
+- `storage`: Store language, Notion config, library index, and preferences locally.
+- `contextMenus`：提供“采集图片”“设为提示词”等右键菜单入口。
+- `contextMenus`: Provide right-click entries like “Capture Image” and “Set as Prompt”.
+- `sidePanel`：提供常驻侧边栏界面，用于采集预览、提示词编辑与本地图库管理。
+- `sidePanel`: Provide a persistent side panel for preview, prompt editing, and local library management.
+- `clipboardRead`：在用户点击“粘贴”时读取剪贴板中的图片或链接，用于采集。
+- `clipboardRead`: Read images or links from the clipboard when the user clicks “Paste” for capture.
+- `host_permissions`：`<all_urls>` 支撑在任意网站启用采集；`https://api.notion.com/*` 用于 Notion 同步。我们不收集浏览历史、不进行跨站跟踪。
+- `host_permissions`: `<all_urls>` to enable capture across sites; `https://api.notion.com/*` for Notion sync. We do not collect browsing history or perform cross-site tracking.
+- `unlimitedStorage`：保障本地索引与图片缓存稳定性，支持离线可用；不涉及云端存储。
+- `unlimitedStorage`: Ensure stability of local index and image cache for offline use; no cloud storage.
 
-## 4. Contact Us
-If you have any questions about this Privacy Policy, please contact us at:
-[aidiemail@gmail.com]
+## 远程代码使用 / Remote Code Usage
+- 不使用远程代码；扩展不从远程服务器加载或执行代码。逻辑代码随扩展打包分发并在本地执行；仅按需请求公开的静态配置与图标资源用于显示。
+- No remote code is used; the extension does not load or execute code from remote servers. All logic is bundled and runs locally; only public static config/icons are requested for display when needed.
 
----
+## 版本变更 / Version Change
+- v0.4.14 权限合规修复：移除未使用的 `scripting` 权限，遵循最小权限原则；不涉及功能变更。
+- v0.4.14 Compliance: Removed the unused `scripting` permission to follow the least privilege principle; no functional changes.
 
-# 隐私政策 (MuseCapture)
-**最后更新日期：** 2025年12月7日
-
-MagiclampAI·MuseCapture（以下简称“我们”）致力于保护您的隐私。本隐私政策说明了我们的 Chrome 扩展程序如何处理您的数据。
-
-## 1. 数据收集与使用
-**我们不会收集、存储或传输您的个人数据到我们的服务器。**
-MuseCapture 是一款**本地优先**的应用程序。扩展程序处理的所有数据仅存在于您的本地设备或您自己的 Notion 工作区中（如果您配置了的话）。
-
-### 1.1 权限使用说明
-- **activeTab & tabs**：仅在您触发采集操作时，用于获取当前标签页的图片链接和网页标题，以便在本地生成文件名和来源链接。
-- **contextMenus**：用于在右键菜单中提供“采集图片”选项。
-- **clipboardRead**：仅当您点击“粘贴”按钮时，用于读取剪贴板中的图片数据。
-- **storage & unlimitedStorage**：用于在浏览器本地保存您的设置（语言、Notion 配置）和图片库索引。
-
-## 2. 第三方服务
-### 2.1 Notion（可选）
-如果您选择启用 Notion 集成，扩展程序将使用您提供的凭据直接与 Notion API 通信。您的 Notion API 令牌仅存储在您的浏览器本地（Chrome Storage），绝不会发送给我们。
-
-## 3. 数据安全
-由于我们不为此扩展程序托管任何服务器，您的数据安全依赖于您的本地设备安全和 Google Chrome 的沙盒环境。
-
-## 4. 联系我们
-如果您对本隐私政策有任何疑问，请联系我们：
-[aidiemail@gmail.com]
+## 联系方式 / Contact
+- 应用商店反馈渠道或 GitHub Issues。
+- App store feedback channels or GitHub Issues.
